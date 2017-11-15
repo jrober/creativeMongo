@@ -21,6 +21,7 @@
   </form>
   <button ng-click="addContact()">Add Contact</button>
   <div ng-repeat="contact in contacts">
+  	<button ng-click="incrementUpvotes(contact)">delete contact</button>
     {{contact.title}} - upvotes: {{contact.upvotes}}
   </div>
 </div>

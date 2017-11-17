@@ -1,0 +1,53 @@
+<html>
+<head>
+  <title>Comments</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+  <script src="javascripts/frontapp.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+</head>
+<body ng-app="comment" ng-controller="MainCtrl">
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+<div class="page-header" align="center"> 
+  <h1 align="center">Contact Book</h1>
+</div>
+
+  <form align="center" ng-submit="addComment()" style = "margin-top30px;">
+    <!--input type="text" ng-model="formContent"></input>
+	<br/-->
+	<p align="center">Name</p>
+	<input align="center" type="text" ng-model="name"></input>
+	<br/>
+	<p align="center">Address</p>
+	<input align="center" type="text" ng-model="address"></input>
+	<br/>
+	<p align="center">Phone Number</p>
+	<input align="center" type="text" ng-model="phoneNumber"></input>
+	<br/>
+	<p align="center">Email</p>
+	<input align="center" type="text" ng-model="email"></input>
+	<br/>
+	<br/>
+    <button type="submit">Add Contect</button>
+	
+  </form>
+  <div align="center">
+    {{test}}
+  </div>
+  <div ng-repeat="comment in comments" align="center">
+  <div class="contactCell">
+    
+    <h3>{{comment.name}}<h3>
+	<p>Address: {{comment.address}}</p>
+	<p>Phone Number: {{comment.phoneNumber}}</p>
+	<p>Email: {{comment.email}}</p>
+	<span class="glyphicon glyphicon-remove-sign" ng-click="delete(comment)"></span>
+	</div>
+	<br/>
+  </div>
+</div>
+
+</body>
+</html>

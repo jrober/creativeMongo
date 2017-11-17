@@ -1,0 +1,19 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: Cornsilk;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.contactCell {
+	border-style: double;
+	border-width: 5px;
+}
+
+.card {
+border: 5px;	
+}
+
